@@ -1,0 +1,163 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+body {
+    font-family: '微软雅黑';
+    color: #409fd9;
+}
+
+a {
+    color: #f0f0f0;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #000;
+}
+
+header{
+    overflow: hidden;
+}
+
+header .heading{
+    width: 80%;
+    padding-left: 5em;
+    margin: 0 auto;
+}
+header .heading h1{
+    display: inline-block;
+    line-height: 5rem;
+    font-size: 3rem;
+}
+
+.container{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.container .item .time{
+    width: 24%;
+    display: inline-block;
+    float: left;
+    text-align: right;
+    overflow: hidden;
+}
+.container .item .time span{
+    font-size: 1rem;
+}
+.container .item:nth-child(odd) .time h1,.container .item:nth-child(odd) .time span{
+    color: #6cbfee;
+}
+.container .item:nth-child(even) .time h1,.container .item:nth-child(even) .time span{
+    color: #3594cb;
+}
+.container .item .time h1{
+    font-size: 3rem;
+    margin: 0.5rem 0;
+}
+.container .item .item-container{
+    width: 68%;
+    display: inline-block;
+    padding:.5rem 1.5rem;
+    float:right;
+    border-left: 10px #409fd9 solid;
+}
+.container .item:nth-child(odd) .item-body{
+    background: #6cbfee;
+}
+.container .item:nth-child(even) .item-body{
+    background: #3594cb;
+}
+.container .item .item-body {
+    padding: 1rem;
+    border-radius: 10px;
+    color: #f0f0f0;
+    font-size: 1rem;
+}
+.container .item .item-body .item-title{
+    padding-bottom: 1rem;
+    border-bottom: 2px #f0f0f0 solid;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width:55em) and (min-width:40em) {
+    .container{
+        width: 90%;
+        padding: 0.5rem 0;
+        margin: 0 auto;
+    }
+    .container .item .time{
+        width: 18%;
+    }
+    .container .item .time span{
+        font-size: 1rem;
+        margin: 0.5rem 0;
+    }
+    .container .item .time h1{
+        font-size: 1.5rem;
+        margin: 0.5rem 0;
+    }
+    .container .item .item-container{
+        width: 70%;
+
+    }
+}
+
+@media screen and (max-width:40em){
+    header .heading{
+        width: 100%;
+        padding-left: 0;
+    }
+    header .heading h1{
+        display: block;
+        text-align: center;
+        line-height: 2.5rem;
+        font-size: 2rem;
+    }
+    .container{
+        width: 100%;
+        padding: 0.5rem 0;
+    }
+    .container .item .time{
+        width:50%;
+        display: block;
+        float: none;
+        text-align: left;
+        padding-left:2rem;
+    }
+    .container .item .time span{
+        font-size: 1rem;
+        margin: 0.5rem 0;
+    }
+    .container .item .time h1{
+        font-size: 1.5rem;
+        margin: 0;
+    }
+    .container .item .item-container{
+        float: none;
+        display: block;
+        padding:0.5rem 0 1rem;
+        border-left:none;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .container .item .item-body {
+        font-size: 0.9rem;
+    }
+    .container .item .item-body .item-title{
+        font-size: 1.2rem;
+    }
+}
